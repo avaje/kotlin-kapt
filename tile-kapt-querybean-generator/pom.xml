@@ -4,7 +4,7 @@
 
   <groupId>io.avaje.kapt</groupId>
   <artifactId>querybean-generator</artifactId>
-  <version>1.1-SNAPSHOT</version>
+  <version>1.1</version>
   <packaging>tile</packaging>
 
   <parent>
@@ -15,7 +15,7 @@
 
   <scm>
     <developerConnection>scm:git:git@github.com:avaje/kotlin-kapt.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>querybean-generator-1.1</tag>
   </scm>
 
   <build>
