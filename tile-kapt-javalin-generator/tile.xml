@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+
+  <description>
+    Add KAPT annotation processor to generate javalin controllers (as java source code).
+  </description>
+
+  <properties>
+    <tile-merge-source>true</tile-merge-source>
+    <javalin-generator.version>1.14</javalin-generator.version>
+  </properties>
+
+  <build>
+    <plugins>
+
+      <plugin>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <artifactId>kotlin-maven-plugin</artifactId>
+
+        <executions>
+          <execution>
+            <id>kapt</id>
+            <configuration tiles-keep-id="true">
+              <annotationProcessorPaths>
+                <annotationProcessorPath>
+                  <!-- Generate web route adapters for Javalin Controllers -->
+                  <groupId>io.dinject</groupId>
+                  <artifactId>javalin-generator</artifactId>
+                  <version>${javalin-generator.version}</version>
+                </annotationProcessorPath>
+              </annotationProcessorPaths>
+            </configuration>
+          </execution>
+
+        </executions>
+      </plugin>
+
+    </plugins>
+
+  </build>
+
+</project>

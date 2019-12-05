@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+
+  <description>
+    Add KAPT annotation processor to generate Ebean query beans.
+  </description>
+
+  <properties>
+    <tile-merge-source>true</tile-merge-source>
+    <querybean-generator.version>12.1.1</querybean-generator.version>
+  </properties>
+
+  <build>
+    <plugins>
+
+      <plugin>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <artifactId>kotlin-maven-plugin</artifactId>
+
+        <executions>
+          <execution>
+            <id>kapt</id>
+            <configuration tiles-keep-id="true">
+              <annotationProcessorPaths>
+                <annotationProcessorPath>
+                  <!-- Generate web route adapters for Javalin Controllers -->
+                  <groupId>io.ebean</groupId>
+                  <artifactId>kotlin-querybean-generator</artifactId>
+                  <version>${querybean-generator.version}</version>
+                </annotationProcessorPath>
+              </annotationProcessorPaths>
+            </configuration>
+          </execution>
+
+        </executions>
+      </plugin>
+
+    </plugins>
+
+  </build>
+
+</project>
