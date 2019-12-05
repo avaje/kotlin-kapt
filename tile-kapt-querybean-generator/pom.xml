@@ -14,7 +14,7 @@
   </parent>
 
   <scm>
-    <developerConnection>scm:git:git@github.com:dinject/kapt-javalin.git</developerConnection>
+    <developerConnection>scm:git:git@github.com:avaje/kotlin-kapt.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
