@@ -3,8 +3,8 @@ Maven tiles for Kotlin kapt (annotation processors)
 
 ## Why
 
-To simplify the configuration of the Kotlin compiler with multiple
-annotation processors (KAPT).
+To simplify the configuration of the maven kotlin compiler plugin when 
+using multiple annotation processors (KAPT).
 
 ## Example
 
