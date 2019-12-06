@@ -34,17 +34,40 @@ In maven build / plugins add:
 </plugin>
 ```  
 
-# The tiles
+## The tiles
 
-## compile tile
+### compile tile
 This tile that adds kotlin compiler and java compiler 
 
-## kapt tiles - dinject-generator, javalin-generator, querybean-generator
+### kapt tiles - dinject-generator, javalin-generator, querybean-generator
 These tiles specify the annotation processor to include
 with the kotlin compiler
 
 
-## How this works
+# Configuration
+
+The default configuration properties this tile uses is:
+
+- java.release -> 11
+- kotlin.version -> 1.3.61
+- kotlin.apiVersion -> 1.3
+- kotlin.jvmTarget -> 11
+
+Override these as needed in the pom properties section.
+
+```xml
+  <properties>
+    <tile-merge-target>true</tile-merge-target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.release>11</java.release>
+    <kotlin.version>1.3.61</kotlin.version>
+    <kotlin.apiVersion>1.3</kotlin.apiVersion>
+    <kotlin.jvmTarget>11</kotlin.jvmTarget>
+    <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+  </properties>
+```
+
+# How this works
 
 This relies on the `io.repaint.maven` tiles plugin version `2.16` (or greater). 
 The tiles plugin has the feature where we can have tiles that effectively merge 
