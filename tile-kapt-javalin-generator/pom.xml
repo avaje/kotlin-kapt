@@ -4,7 +4,7 @@
 
   <groupId>io.avaje.kapt</groupId>
   <artifactId>javalin-generator</artifactId>
-  <version>1.15</version>
+  <version>1.16-SNAPSHOT</version>
   <packaging>tile</packaging>
 
   <parent>
@@ -15,7 +15,7 @@
 
   <scm>
     <developerConnection>scm:git:git@github.com:avaje/kotlin-kapt.git</developerConnection>
-    <tag>javalin-generator-1.15</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <build>
