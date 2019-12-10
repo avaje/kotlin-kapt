@@ -7,7 +7,7 @@
 
   <properties>
     <tile-merge-source>true</tile-merge-source>
-    <querybean-generator.version>12.1.1</querybean-generator.version>
+    <querybean-generator.version>12.1.5</querybean-generator.version>
   </properties>
 
   <build>
