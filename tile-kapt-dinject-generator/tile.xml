@@ -7,7 +7,7 @@
 
   <properties>
     <tile-merge-source>true</tile-merge-source>
-    <dinject-generator.version>1.12</dinject-generator.version>
+    <dinject-generator.version>1.15</dinject-generator.version>
   </properties>
 
   <build>
