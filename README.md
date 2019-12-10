@@ -22,13 +22,13 @@ In maven build / plugins add:
     <tile>io.avaje.kapt:compile:1.1</tile>
 
     <!-- multiple annotation processors -->
-    <tile>io.avaje.kapt:dinject-generator:1.1</tile>
-    <tile>io.avaje.kapt:javalin-generator:1.1</tile>
-    <tile>io.avaje.kapt:querybean-generator:1.1</tile>
+    <tile>io.avaje.kapt:dinject-generator:1.15</tile>
+    <tile>io.avaje.kapt:javalin-generator:1.15</tile>
+    <tile>io.avaje.kapt:querybean-generator:12.1.5</tile>
 
     <!-- other tiles -->
     <tile>org.avaje.tile:lib-classpath:1.1</tile>
-    <tile>io.ebean.tile:enhancement:12.1.3</tile>
+    <tile>io.ebean.tile:enhancement:12.1.5</tile>
   </tiles>
 </configuration>
 </plugin>
