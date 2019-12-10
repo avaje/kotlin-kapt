@@ -7,7 +7,7 @@
 
   <properties>
     <tile-merge-source>true</tile-merge-source>
-    <javalin-generator.version>1.14</javalin-generator.version>
+    <javalin-generator.version>1.15</javalin-generator.version>
   </properties>
 
   <build>
